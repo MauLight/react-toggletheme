@@ -1,3 +1,43 @@
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-300px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(300px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slideInLeft {
+  margin-right: auto;
+  color: #61DAFB;
+  font-weight: 700;
+  font-size: 22px;
+  animation: slideInLeft 1s ease 0s 1 both !important;
+
+  transform: translateX(-150px);
+}
+.slideInRight {
+  animation: slideInRight 1s ease 0s 1 both !important;
+
+  transform: translateX(-150px);
+}
+
+.nav--logo_text,
+.nav--title {
+  margin: 0;
+}
+
 * {
   box-sizing: border-box;
   width: 800px;
@@ -17,18 +57,6 @@ nav {
   background-color: #21222A;
   height: 90px;
   padding: 30px 25px;
-}
-
-.nav--logo_text,
-.nav--title {
-  margin: 0;
-}
-
-.nav--logo_text {
-  margin-right: auto;
-  color: #61DAFB;
-  font-weight: 700;
-  font-size: 22px;
 }
 
 .nav--title {
@@ -92,12 +120,12 @@ main {
 }
 
 .toggle-btn {
-  position: absolute;
+
   float: right;
   background-color: #61DAFB !important;
   width: 80px;
 
-  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease !important;
+  transition: all 0.3s ease !important;
 
   /*
   transition-property: transform !important;

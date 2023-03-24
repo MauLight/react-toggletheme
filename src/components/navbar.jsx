@@ -11,8 +11,8 @@ export default function Navbar() {
 
     return (
         <nav style={theme}>
-            <img src={image} className="nav--icon" />
-            <h3 className="nav--logo_text">ReactFacts</h3>
+            <img src={image} className="nav--icon slideInRight" />
+            <h3 className="nav--logo_text slideInLeft">ReactFacts</h3>
             <h4 className="nav--title" style={theme}>React Course - Project 1</h4>
         </nav>
     )
