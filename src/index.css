@@ -19,7 +19,8 @@ nav {
   padding: 30px 25px;
 }
 
-.nav--logo_text, .nav--title {
+.nav--logo_text,
+.nav--title {
   margin: 0;
 }
 
@@ -68,6 +69,11 @@ main {
   font-size: 39px;
   letter-spacing: -0.05em;
 
+  transition: transform 0.3s ease 0s !important;
+}
+
+.main--title:hover {
+  transform: translateY(-2px);
 }
 
 .main--facts {
@@ -75,12 +81,34 @@ main {
   max-width: 400px;
 }
 
-.main--facts > li {
+.main--facts>li {
   line-height: 19px;
   padding-block: 10px;
 }
 
-.main--facts > li::marker {
+.main--facts>li::marker {
   font-size: 1.4rem;
   color: #61DAFB;
+}
+
+.toggle-btn {
+  position: absolute;
+  float: right;
+  background-color: #61DAFB !important;
+  width: 80px;
+
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease !important;
+
+  /*
+  transition-property: transform !important;
+  transition-duration: 0.3s !important;
+  transition-timing-function: ease !important;
+  transition-delay: 0s !important;
+  */
+}
+
+.toggle-btn:hover {
+  transform: translateY(-2px);
+  background-color: white !important;
+  color: #282D35 !important;
 }
